@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+{% load static %}
+<!-- Coding by CodingLab | www.codinglabweb.com  -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt & Decrypt</title>
+
+    <!-- Swiper JS CSS-->
+    <link rel="stylesheet" href="{% static 'styles/swiper-bundle.min.css' %}">
+
+    <!-- Scroll Reveal -->
+    <link rel="stylesheet" href="{% static 'styles/scrollreveal.min.js' %}">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container flex">
+            <a href="#" class="logo-content flex">
+                <i class='bx bx-lock logo-icon'></i>
+                <span class="logo-text">AxCrypt</span>
+            </a>
+
+            <div class="menu-content">
+                <ul class="menu-list flex">
+                    <li><a href="#home" class="nav-link active-navlink">home</a></li>
+                    <li><a href="#about" class="nav-link">about</a></li>
+                    <li><a href="#menu" class="nav-link">menu</a></li>
+                    <li><a href="#review" class="nav-link">Team</a></li>
+                </ul>
+
+                <div class="media-icons flex">
+                    <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/accounts/login"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://github.com/login"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.youtube.com/login"><i class='bx bxl-youtube'></i></a>
+                </div>
+
+                <i class='bx bx-x navClose-btn'></i>
+            </div>
+
+            <div class="contact-content flex">
+                <span class="phone-number"></span>
+            </div>
+
+            <i class='bx bx-menu navOpen-btn'></i>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <main>
+        <section class="home" id="home">
+            <div class="home-content">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/1.jpeg' %}" alt="" class="home-img">
+
+                            <div class="home-details">
+                                <div class="home-text">
+                                    <h4 class="homeSubtitle">Protecting What Matters Most.</h4>
+                                    <h2 class="homeTitle">State-of-the-Art Encryption <br> for Your Valuable Files</h2>
+                                </div>
+
+                                {% comment %} <button class="button">Explore</button> {% endcomment %}
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/4.jpeg' %}" alt="" class="home-img"
+                                style="width: 1920px;height: 1080px;">
+
+                            <div class="home-details">
+                                <div class="home-text">
+                                    <h4 class="homeSubtitle">Unlock Security's Elegance.</h4>
+                                    <h2 class="homeTitle">Decryption Services with a Touch <br> of Digital
+                                        Sophistication</h2>
+                                </div>
+
+                                {% comment %} <button class="button">Explore</button> {% endcomment %}
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="{% static 'images/3.jpeg' %}" alt="" class="home-img">
+
+                            <div class="home-details">
+                                <div class="home-text">
+                                    <h4 class="homeSubtitle">Securing Your Digital World.</h4>
+                                    <h2 class="homeTitle">Seamless File Encryption <br> and Decryption Solutions</h2>
+                                </div>
+
+                                {% comment %} <button class="button">Explore</button> {% endcomment %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="about-content container">
+                <div class="about-imageContent">
+                    <img src="{% static 'images/secure-image-sharing-25.jpg' %}" alt="" class="about-img">
+
+                    <div class="aboutImg-textBox">
+                        <i class='bx bx-shield-alt shield-icon flex'></i>
+                        <p class="content-description">We are dedicated to protecting your data. Our encryption services
+                            provide peace of mind for your digital files.</p>
+                    </div>
+                </div>
+
+                <div class="about-details">
+                    <div class="about-text">
+                        <h4 class="content-subtitle"><i>Your File Security Partner</i></h4>
+                        <h2 class="content-title">Balancing Security and Accessibility</h2>
+                        <p class="content-description">We understand the importance of keeping your data safe while
+                            ensuring easy access. Our mission is to provide you with robust file encryption and
+                            decryption solutions.</p>
+
+                        <ul class="about-lists flex">
+                            <li class="about-list">File Encryption</li>
+                            <li class="about-list dot">.</li>
+                            <li class="about-list">Data Protection</li>
+                            <li class="about-list dot">.</li>
+                            <li class="about-list">User-Friendly Tools</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-buttons flex">
+                        {% comment %} <button class="button">About Us</button> {% endcomment %}
+                        <a href="#" class="about-link flex">
+                            {% comment %} <span class="link-text">Learn More</span> {% endcomment %}
+                            <i class='bx bx-right-arrow-alt about-arrowIcon'></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+
+        <section class="section menu" id="menu">
+            <div class="menu-container container">
+
+                <div class="menu-content" style="margin-bottom: 30px; margin-top: -30px;">
+                    <form method="POST" id="encryptionForm" class="menu-items"
+                        style="text-align: left;margin-top: 55px;" enctype="multipart/form-data">
+                        {% csrf_token %}
+
+                        <label for="fileInput"
+                            style="display: block; font-size: 16px; margin-bottom: 5px; color: #ccc; font-weight: bold;margin-left:400px;margin-top:-65px;font-size:25px">ENCRYPTION</label>
+                        <label for="fileInput"
+                            style="display: block; font-size: 16px; margin-bottom: 5px; color: #ccc; font-weight: bold;margin-top:-41px;">Select
+                            a file to encrypt:</label>
+
+                        <div style="display: flex;">
+                        <input type="file" id="fileInput" name="FileEncrypt" accept=".txt" required
+                            style="width: 600px; padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 10px; background: transparent !important; color: #fff;margin-top:-25px;height:50px">
+
+        
+                            <button class="button" style="width:150px;height:50px;margin-left:40px;margin-top:-23px;">  <input type="submit" name="Encrypt" value="Encrypt" style="background-color: var(--primary-color);border:none;color:white;"></button>
+
+                            <button class="button"
+                                style="margin-left:15px;width:150px;height:50px;margin-top:-23px;"><a href="{% url 'create_zip_and_download' %}" style="color:white">Download</a>
+                            </button>
+
+                        </div>
+
+                        <br> <br> <br> <br> <br> <br> <br> <br> <br>
+                        </form>
+
+                        <form method="POST" id="encryptionForm" class="menu-items"
+                        style="text-align: left;margin-top: 150px;margin-left:-1010px" enctype="multipart/form-data">
+                        {% csrf_token %}
+
+                        <label for="fileInput"
+                            style="display: block; font-size: 16px; margin-bottom: 5px; color: #ccc; font-weight: bold;margin-left:400px;margin-top:30px;font-size:25px">DECRYPTION</label>
+                        <label for="fileInput"
+                            style="display: block; font-size: 16px; margin-bottom: 5px; color: #ccc; font-weight: bold;margin-top:-11px;">Select
+                            a file to decrypt:</label>
+
+                        <div style="display: flex;">
+
+                        <input type="file" id="fileInput" name="FileDecrypt" accept=".txt" required
+                            style="width: 600px;height:50px; padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 10px; background: transparent !important; color: #fff;margin-top:-15px;">
+                        
+                            <button class="button" style="width:150px;height:50px;margin-left:40px;margin-top:-23px;">
+                                <input type="submit" name="Decrypt" value="Decrypt" style="background-color: var(--primary-color);border:none;color:white;">   
+                            </button>
+
+                                 <button class="button" style="margin-left:15px;width:150px;height:50px;margin-top:-23px;"><a
+                                    href="{% url 'serve_file' file_path='Output.txt' %}" style="color:white">Download</a>
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <!-- <button class="button" style="margin-left: 676px;">Explore</button> -->
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="section review" id="review">
+            <div class="review-container container">
+                <div class="review-text">
+                    <h4 class="section-subtitle"><i>Meet the Team</i></h4>
+                    <h2 class="section-title">Our Dedicated Developers</h2>
+                    <p class="section-description">Meet the skilled professionals who work tirelessly to ensure your
+                        data remains secure. Our team is passionate about providing top-notch file encryption and
+                        decryption solutions to protect your valuable information.</p>
+                </div>
+
+
+                <div class="tesitmonial swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="testi-content swiper-slide flex">
+                            <img src="{% static 'images/Ankit.jpg' %}" alt="" class="review-img">
+                            <p class="review-quote">Ankitkumar Prajapati</p>
+                            <p class="review-quote">21BCP153</p>
+
+                        </div>
+                        <div class="testi-content swiper-slide flex">
+                            <img src="{% static 'images/shivang.jpg' %}" alt="" class="review-img">
+                            <p class="review-quote">Shivang Patel</p>
+                            <p class="review-quote">21BCP176</p>
+
+                        </div>
+                        <div class="testi-content swiper-slide flex">
+                            <img src="{% static 'images/team 1.jpeg' %}" alt="" class="review-img">
+                            <p class="review-quote">Jeet Shah</p>
+                            <p class="review-quote">21BCP440D</p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="section footer">
+            <div class="footer-container container">
+                <div class="footer-content">
+                    <a href="#" class="logo-content flex">
+                        <i class='bx bx-lock logo-icon'></i>
+                        <span class="logo-text">AxCrypt</span>
+                    </a>
+
+                    <p class="content-description">AxCrypt is your go-to solution for secure file encryption and
+                        decryption. Protect your sensitive data with ease.</p>
+
+                    <div class="footer-location flex">
+                        <i class='bx bx-map map-icon'></i>
+
+                        <div class="location-text">
+                            PDPU
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-linkContent">
+                    <ul class="footer-links">
+                        <h4 class="footerLinks-title">Services</h4>
+
+                        <li><a href="#menu" class="footer-link">File Encryption</a></li>
+                        <li><a href="#menu" class="footer-link">File Decryption</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Scroll Up -->
+        <a href="#home" class="scrollUp-btn flex">
+            <i class='bx bx-up-arrow-alt scrollUp-icon'></i>
+        </a>
+
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+
+    <!-- Scroll Reveal -->
+    <script src="{% static 'js/scrollreveal.js' %}"></script>
+
+    <!-- JavaScript -->
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>
